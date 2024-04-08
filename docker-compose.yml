@@ -1,0 +1,9 @@
+version: '3'
+services:
+  ghunt:
+    restart: always
+    build: .
+    image: ghunt-docker
+    container_name: 'ghunt'
+    working_dir: '/root/'
+    tty: true
